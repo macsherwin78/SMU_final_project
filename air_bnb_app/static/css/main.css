@@ -2396,7 +2396,7 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #f6755e;
+		background-color:  #ff5a5f;
 		border-radius: 4px;
 		border: 0;
 		color: #ffffff;
@@ -2417,7 +2417,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #f78a76;
+			background-color:  #ff5a5f;
 		}
 
 		input[type="submit"]:active,
@@ -2425,7 +2425,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: #f56046;
+			background-color:  #ff5a5f;
 		}
 
 		input[type="submit"].icon,
@@ -2626,11 +2626,11 @@
 	}
 
 		.wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5 {
-			color: #25a2c3;
+			color: #555555;
 		}
 
 		.wrapper.style1 {
-			background: #f6755e;
+			background:  #ff5a5f;
 			color: #fcdcd6;
 		}
 
@@ -2683,7 +2683,7 @@
 	}
 
 		#header .logo {
-			color: #f6755e;
+			color:  #ff5a5f;
 			font-family: "Pacifico", cursive;
 			font-size: 2.5em;
 			letter-spacing: 2px;
@@ -2920,7 +2920,7 @@
 
 	#banner {
 		padding: 14em 0 12em 0;
-		background-image: url(../../images/banner.jpg);
+		/* background-image: url("../images/banner.jpg"); */
 		background-size: cover;
 		background-position: center top;
 		background-repeat: no-repeat;
@@ -2937,7 +2937,7 @@
 
 		#banner h1 {
 			font-size: 3em;
-			color: #25a2c3;
+			color: #ff5a5f;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
@@ -3136,9 +3136,9 @@
 
 	#footer {
 		padding: 6em 0 4em 0;
-		background: #25a2c3;
+		background: #555555;
 		text-align: center;
-		color: #c8e7f0;
+		color: #ffffff;
 	}
 
 		#footer h2 {
@@ -3146,11 +3146,11 @@
 		}
 
 		#footer .icon {
-			color: #f6755e;
+			color:  #ff5a5f;
 		}
 
 		#footer a {
-			color: #c8e7f0;
+			color: #ffffff;
 			text-decoration: none;
 		}
 
@@ -3160,7 +3160,7 @@
 
 		#footer .copyright {
 			display: inline-block;
-			color: #a7d9e7;
+			color: #ffffff;
 			font-size: 0.75em;
 			margin: 0 0 2em 0;
 			padding: 0;

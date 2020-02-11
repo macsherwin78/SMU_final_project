@@ -2794,8 +2794,8 @@
 		-ms-transition: -ms-transform 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: #25a2c3;
-		color: #ffffff;
+		background: #ffffff;
+		color: #FF5A5F;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -2851,7 +2851,7 @@
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: transparent;
 			border: 0;
-			color: #a7d9e7;
+			color: #ffffff;
 			cursor: pointer;
 			display: block;
 			height: 3.25em;
@@ -2880,7 +2880,7 @@
 			}
 
 			#menu .close:hover {
-				color: #ffffff;
+				color: #FF5A5F;
 			}
 
 			@media screen and (max-width: 736px) {

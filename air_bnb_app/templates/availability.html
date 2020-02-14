@@ -24,12 +24,16 @@
 		<!-- Menu -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
-				</ul>
-				<ul class="actions vertical">
-					<li><a href="#" class="button fit">Login</a></li>
+					<li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('overview')}}">Overview</a></li>
+                <li><a href="{{url_for('map')}}">Map</a></li>
+                <li><a href="{{url_for('neighborhood')}}">Neighborhood</a></li>
+                <li><a href="{{url_for('room_type')}}">Room Type</a></li>
+                <li><a href="{{url_for('availability')}}">Availability</a></li>
+                <li><a href="{{url_for('price_predictor')}}">Price Predictor</a></li>
+                <li><a href="{{url_for('summary')}}">Summary</a></li>
+                <li><a href="{{url_for('conclusions')}}">Conclusions</a></li>
+				<li><a href="{{url_for('collaborators')}}">Collaborators</a></li>
 				</ul>
 			</nav>
 
@@ -65,11 +69,11 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="static/js/jquery.min.js"></script>
+		<script src="static/js/jquery.scrolly.min.js"></script>
+		<script src="static/js/skel.min.js"></script>
+		<script src="static/js/util.js"></script>
+		<script src="static/js/main.js"></script>
 
 	</body>
 </html>

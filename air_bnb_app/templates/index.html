@@ -25,16 +25,16 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="{{url_for('index')}}">Home</a></li>
-					<li><a href="{{url_for('overview')}}">Overview</a></li>
-					<li><a href="{{url_for('map')}}">Map</a></li>
-					<li><a href="{{url_for('neighborhood')}}">Neighborhood</a></li>
-					<li><a href="{{url_for('room_type')}}">Room Type</a></li>
-					<li><a href="{{url_for('availability')}}">Availability</a></li>
-					<li><a href="{{url_for('price_predictor')}}">Price Predictor</a></li>
+                <li><a href="{{url_for('overview')}}">Overview</a></li>
+                <li><a href="{{url_for('map')}}">Map</a></li>
+                <li><a href="{{url_for('neighborhood')}}">Neighborhood</a></li>
+                <li><a href="{{url_for('room_type')}}">Room Type</a></li>
+                <li><a href="{{url_for('availability')}}">Availability</a></li>
+                <li><a href="{{url_for('price_predictor')}}">Price Predictor</a></li>
+                <li><a href="{{url_for('summary')}}">Summary</a></li>
+                <li><a href="{{url_for('conclusions')}}">Conclusions</a></li>
+				<li><a href="{{url_for('collaborators')}}">Collaborators</a></li>
 				</ul>
-				<!-- <ul class="actions vertical">
-					<li><a href="#" class="button fit">Login</a></li>
-				</ul> -->
 			</nav>
 
 		<!-- Banner -->
@@ -62,9 +62,11 @@
 						</div>
 					</div>
 					<div class="flex-item image fit round">
-						<a href="{{url_for('overview')}}">
-						<img src="static/images/air-bnb-logo.png" alt="" />
-						</a>
+						<div class="blob">
+							<a href="{{url_for('overview')}}">
+							<img src="static/images/air-bnb-logo.png" alt="" />
+							</a>
+						</div>
 					</div>
 					<div class="flex-item right">
 						<div>
@@ -131,7 +133,7 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
-					<h2><font color='blue'>SMU</font></br><font color='red'>Data Science Bootcamp</font></h2>
+					<h2>SMU</br>Data Science Bootcamp</h2>
 					<ul class="actions">
 						<li><span class="icon fa-phone"></span> <a href="#">(214) 775-9982</a></li>
 						<li><span class="icon fa-envelope"></span> <a href="#">www.smu.edu/Pro</a></li>

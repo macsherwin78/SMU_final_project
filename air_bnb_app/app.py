@@ -11,9 +11,21 @@ def index():
 def overview():
     return render_template('overview.html')
 
-@app.route("/linear_regressions")
-def linear_regressions():
-    return render_template('linear_regressions.html')
+@app.route("/data")
+def data():
+    return render_template('data.html')
+
+@app.route("/pre_processing")
+def pre_processing():
+    return render_template('pre_processing.html')
+
+@app.route("/machine_learning")
+def machine_learning():
+    return render_template('machine_learning.html')
+
+@app.route("/linear_regression")
+def linear_regression():
+    return render_template('linear_regression.html')
 
 @app.route("/trees")
 def trees():
@@ -34,10 +46,6 @@ def acknowledgement():
 @app.route("/summary")
 def summary():
     return render_template('summary.html')
-
-@app.route("/conclusions")
-def conclusions():
-    return render_template('conclusions.html')
 
 @app.route("/collaborators")
 def collaborators():

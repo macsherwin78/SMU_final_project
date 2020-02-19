@@ -26,14 +26,11 @@
             <ul class="links">
 				<li><a href="{{url_for('index')}}">Home</a></li>
                 <li><a href="{{url_for('overview')}}">Overview</a></li>
-                <li><a href="{{url_for('linear_regressions')}}">Linear Regressions</a></li>
-                <li><a href="{{url_for('trees')}}">Trees</a></li>
-                <li><a href="{{url_for('knn')}}">k-Nearest Neighbors</a></li>
-                <li><a href="{{url_for('gradient_boost')}}">Gradient Boost</a></li>
+                <li><a href="{{url_for('data')}}">Data</a></li>
+                <li><a href="{{url_for('pre_processing')}}">Data Pre-Processing</a></li>
+                <li><a href="{{url_for('machine_learning')}}">Machine Learning</a></li>
                 <li><a href="{{url_for('collaborators')}}">Collaborators</a></li>
                 <li><a href="{{url_for('summary')}}">Summary</a></li>
-                <li><a href="{{url_for('conclusions')}}">Conclusions</a></li>
-				<li><a href="{{url_for('acknowledgement')}}">Acknowledgement</a></li>
 			</ul>
 
         </nav>
@@ -43,14 +40,27 @@
 				<div class="inner">
 					<header class="align-center">
 						<h1>Overview</h1>
-						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						<p>The figure below shows how we approach this project.</p>
 					</header>
 					<div class="image fit">
-						<img src="../static/images/pic03.jpg" alt="" />
+						<img src="../static/images/overview.png" alt="overview flow chart" />
 					</div>
-					<p>In this project, we will analyze current and predict future Airbnb prices by creating a machine learning model on select categorical data.</p>
-					<p>We intend our resulting model to be used by both Airbnb hosts and renters for price planning: potential hosts can validate Airbnb’s official price model for accuracy, and potential renters can plan travel according to best value by desired categorical attributes.
+
+					<h2 id="content">Objective</h2>
+
+					<p>In this project, we will analyze current and predict 
+						future Airbnb prices by creating a machine learning model 
+						on select categorical data.</br>
+					</br>We intend our resulting model to be used by both Airbnb hosts 
+						and renters for price planning: potential hosts can validate 
+						Airbnb’s official price model for accuracy, and potential renters 
+						can plan travel according to best value by desired categorical attributes.
 					</p>
+
+					<div class="image fit">
+						<img src="../static/images/flowchart.png" alt="pre-processing flow chart" />
+					</div>
+
 				</div>
 			</section>
 

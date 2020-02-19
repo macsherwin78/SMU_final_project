@@ -11,25 +11,25 @@ def index():
 def overview():
     return render_template('overview.html')
 
-@app.route("/map")
-def map():
-    return render_template('map.html')
+@app.route("/linear_regressions")
+def linear_regressions():
+    return render_template('linear_regressions.html')
 
-@app.route("/neighborhood")
-def neighborhood():
-    return render_template('neighborhood.html')
+@app.route("/trees")
+def trees():
+    return render_template('trees.html')
 
-@app.route("/room_type")
-def room_type():
-    return render_template('room_type.html')
+@app.route("/knn")
+def knn():
+    return render_template('knn.html')
 
-@app.route("/availability")
-def availability():
-    return render_template('availability.html')
+@app.route("/gradient_boost")
+def gradient_boost():
+    return render_template('gradient_boost.html')
 
-@app.route("/price_predictor")
-def price_predictor():
-    return render_template('price_predictor.html')
+@app.route("/acknowledgement")
+def acknowledgement():
+    return render_template('acknowledgement.html')
 
 @app.route("/summary")
 def summary():

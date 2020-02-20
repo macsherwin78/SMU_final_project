@@ -38,33 +38,56 @@
             <div class="inner">
                 <header class="align-center">
                     <h1>Trees</h1>
-                    <p>The figure below shows how we approach this project.</p>
                 </header>
-                <!-- <div class="image fit">
-                    <img src="../static/images/linear_regression.png" alt="overview flow chart" />
-                </div> -->
+                
+                <div class="row">
+					<div class="6u 12u$(small)">
+                        <h2 id="content">Decision Tree</h2>
 
-                <h2 id="content">Decision Tree</h2>
+                            <p>
+                                Decision Trees are a non-parametric supervised machine learning model used 
+                                for classification and regression. This model learns in a hierarchical fashion 
+                                by repeatedly splitting the chosen dataset into separate branches to learn non-linear 
+                                relationships. </br> The result is a model that predicts the value of a target variable, 
+                                in this case being price, by learning simple decision rules inferred from data features, 
+                                in this case neighborhood group, room type, or days available during the year.
+                            </p>
 
-                <p>In this project, we will analyze current and predict 
-                    future Airbnb prices by creating a machine learning model 
-                    on select categorical data.</br>
-                </br>We intend our resulting model to be used by both Airbnb hosts 
-                    and renters for price planning: potential hosts can validate 
-                    Airbnb’s official price model for accuracy, and potential renters 
-                    can plan travel according to best value by desired categorical attributes.
-                </p>
+                            <p>
+                                We encoded our data to fit the requirements of this model. 
+                                We did not reach the minimum 85% R2 Score to consider this model effective. </br>
+                                <b>Our R2 Score totaled 7.322849209336635 or 7%.</b>
+                            </p>
 
-                <h2 id="content">Random Forest</h2>
+                            <h2>Strengths: </h2>
+                            <h4>can determine strength of predictors, can predict future trends, can be regularized to avoid overfitting, can be easily updated with new data.</h4>
+                        </br>
+                            <h2>Weaknesses:  </h2>
+                            <h4>poor performance in non-linear relationships, not naturally flexible to capture complex patterns</h4>
+					</div>
+					
+					<div class="6u$ 12u$(small)">
+                        <h2 id="content">Random Forest</h2>
 
-                <p>In this project, we will analyze current and predict 
-                    future Airbnb prices by creating a machine learning model 
-                    on select categorical data.</br>
-                </br>We intend our resulting model to be used by both Airbnb hosts 
-                    and renters for price planning: potential hosts can validate 
-                    Airbnb’s official price model for accuracy, and potential renters 
-                    can plan travel according to best value by desired categorical attributes.
-                </p>
+                        <p>Random Forest is a supervised machine learning model that averages the result of any chosen number of 
+                            Decision Trees using randomly selected observations and selected column features. 
+                            The result is a final average of all values predicted by all present trees  in the Random Forest. 
+                        </p><p>
+                            The most important parameter of the RandomForestRegressor class is the n_estimators parameter, 
+                            which defines the number of Decision Trees to be used. With 100 trees, 
+                            the regressor score is -0.097, weaker than a straight line. With 200 trees, 
+                            the regressor score is -0.093, which is a minimal improvement.  
+                        </p>
+        
+                        <h2>Strengths: </h2>
+                        <h4>reduced overall biasedness since each Random Forest is trained on a subset of data and relies on “the crowd”, 
+                            unlikely to destabilize when new data added, 
+                            works well when categorical and numerical features are present </h4>
+                    </br>
+                        <h2>Weaknesses:  </h2>
+                        <h4>their complexity, subsequent time required to train </h4>
+					</div>
+					</div>
 
             </div>
         </section>

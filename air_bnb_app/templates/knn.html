@@ -38,20 +38,25 @@
             <div class="inner">
                 <header class="align-center">
                     <h1>K-nearest neighbor</h1>
-                    <p>The figure below shows how we approach this project.</p>
+                    <p>
+                        A KNN regression calculates the average of the numerical target of the K nearest neighbors. 
+                        The algorithm selects the best K value for the given data by running itself several times with different values of K. 
+                        The model chooses the K that reduces the number of errors encountered while maintaining the ability to accurately 
+                        make predictions when provided with new data. 
+                    </br>
+                        Our KNN average was .225 which means the similarities are minimal. If the neighbors had been more similar, a higher KNN average would have resulted. 
+                    </p>
                 </header>
                 <div class="image fit">
-                    <img src="../static/images/pic01.jpg" alt="overview flow chart" />
+                    <img src="../static/images/KNN.figure.png" alt="KNN chart" />
                 </div>
 
-                <p>In this project, we will analyze current and predict 
-                    future Airbnb prices by creating a machine learning model 
-                    on select categorical data.</br>
-                </br>We intend our resulting model to be used by both Airbnb hosts 
-                    and renters for price planning: potential hosts can validate 
-                    Airbnb’s official price model for accuracy, and potential renters 
-                    can plan travel according to best value by desired categorical attributes.
-                </p>
+                <h2>Strengths: </h2>
+                <h4>no need to build a model </h4>
+            </br>
+                <h2>Weaknesses:  </h2>
+                <h4>algorithm runs slower as examples or independent variables increase</h4>
+
 
             </div>
         </section>

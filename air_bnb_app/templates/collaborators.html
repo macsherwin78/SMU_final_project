@@ -24,16 +24,13 @@
 		<!-- Menu -->
 			<nav id="menu">
 				<ul class="links">
-				<li><a href="{{url_for('index')}}">Home</a></li>
-                <li><a href="{{url_for('overview')}}">Overview</a></li>
-                <li><a href="{{url_for('linear_regressions')}}">Linear Regressions</a></li>
-                <li><a href="{{url_for('trees')}}">Trees</a></li>
-                <li><a href="{{url_for('knn')}}">k-Nearest Neighbors</a></li>
-                <li><a href="{{url_for('gradient_boost')}}">Gradient Boost</a></li>
-                <li><a href="{{url_for('collaborators')}}">Collaborators</a></li>
-                <li><a href="{{url_for('summary')}}">Summary</a></li>
-                <li><a href="{{url_for('conclusions')}}">Conclusions</a></li>
-				<li><a href="{{url_for('acknowledgement')}}">Acknowledgement</a></li>
+					<li><a href="{{url_for('index')}}">Home</a></li>
+					<li><a href="{{url_for('overview')}}">Overview</a></li>
+					<li><a href="{{url_for('data')}}">Data</a></li>
+					<li><a href="{{url_for('pre_processing')}}">Data Pre-Processing</a></li>
+					<li><a href="{{url_for('machine_learning')}}">Machine Learning</a></li>
+					<li><a href="{{url_for('collaborators')}}">Collaborators</a></li>
+					<li><a href="{{url_for('summary')}}">Summary</a></li>
 				</ul>
 			</nav>
 
@@ -44,62 +41,76 @@
 						<h1>The Collaborators</h1>
 						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
                     </header>
-                    
-					<h3>
-                    <font color=#ff5a5f>Olesea Armasari</font>
-                    </h3>
-                    <p>
-                        <span class="image left"><img src="../static/images/olesea.jpg" alt="" />
-                        </span>
-                        My Favorite part was ML and Tableau was very dynamic and fun program.
-                        I enjoyed exploring various models of ML. 
-                        I learned a lot about ML, enconding part, predicting and testing was a fun process for me. 
-                        I absolutely loved my team, we had the best ambiance. Trust and mutual respect played a key role in the success of this project.
-                    </p>
-                    
-                    <h3 align="center">
-                    <font color=#ff5a5f>Sherwin Macalintal</font>
-                    </h3>
-                        <p><span class="image right"><img src="../static/images/pic01.jpg" alt="" />
-                        </span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. 
-                        tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
-                        Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
-                        Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. 
-                        Vestibulum ante ipsum primis sagittis eget. tempus euismod. 
-                        Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis 
-                        volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt 
-                        felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
-                        Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
-                        Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit 
-                        adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
-                    
-                    <h3 align="center">
-                    <font color=#ff5a5f>Marina Staber</font>
-                    </h3>
-                        <p><span class="image left"><img src="../static/images/pic01.jpg" alt="" />
-                        </span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. 
-                        tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
-                        Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
-                        Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. 
-                        Vestibulum ante ipsum primis sagittis eget. tempus euismod. 
-                        Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis 
-                        iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent 
-                        tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
-                        Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
-                        Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit 
-                        adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
-                    
-                    <h3 align="center">
-                    <font color=#ff5a5f>Rocio Zambrano</font>
-                    </h3>
-                    <p>
-                        <span class="image right"><img src="../static/images/pic01.jpg" alt="" />
-                        </span>My favorite part about working on this project was truly our team. 
-                        I loved how we all respected each other’s ideas and build off each other’s 
-                        strengths to divide and conquer the completion of this project. 
-                        What I learned about the data was that even tough the data may 
-                        appear clean it does not mean that it will do well in a Machine Learning model.
-                    </p>
+
+                    <div class="row">
+						<div class="6u 12u$(small)">
+                            <h3>
+                                <font color=#ff5a5f>Olesea Armasari</font>
+                                </h3>
+                            <div class="image fit">
+                                <img src="../static/images/olesea.jpg" alt="" />
+                            </div>
+							<p>My Favorite part was ML and Tableau was very dynamic and fun program.
+                                I enjoyed exploring various models of ML. 
+                                I learned a lot about ML, enconding part, 
+                                predicting and testing was a fun process for me. 
+                                I absolutely loved my team, we had the best ambiance. 
+                                Trust and mutual respect played a key role in the success of this project.
+                            </p>
+                        </div>
+                        
+						<div class="6u$ 12u$(small)">
+                            <h3>
+                                <font color=#ff5a5f>Sherwin Macalintal</font>
+                                </h3>
+                            <div class="image fit">
+                                <img src="../static/images/sherwin.jpg" alt="" />
+                            </div>
+							<p>My favorite part about working on this project was truly our team. 
+                                I loved how we all respected each other’s ideas and build off each other’s 
+                                strengths to divide and conquer the completion of this project. 
+                                What I learned about the data was that even tough the data may 
+                                appear clean it does not mean that it will do well in a Machine Learning model.
+                            </p>
+                        </div>
+                        
+                        <div class="6u 12u$(small)">
+                            <h3>
+                                <font color=#ff5a5f>Marina Staber</font>
+                                </h3>
+                            <div class="image fit">
+                                <img src="../static/images/olesea.jpg" alt="" />
+                            </div>
+							<p>My Favorite part was ML and Tableau was very dynamic and fun program.
+                                I enjoyed exploring various models of ML. 
+                                I learned a lot about ML, enconding part, 
+                                predicting and testing was a fun process for me. 
+                                I absolutely loved my team, we had the best ambiance. 
+                                Trust and mutual respect played a key role in the success of this project.
+                            </p>
+                        </div>
+                        
+						<div class="6u$ 12u$(small)">
+                            <h3>
+                                <font color=#ff5a5f>Rocio Zambrano</font>
+                                </h3>
+                            <div class="image fit">
+                                <img src="../static/images/olesea.jpg" alt="" />
+                            </div>
+							<p>My favorite part about working on this project was truly our team. 
+                                I loved how we all respected each other’s ideas and build off each other’s 
+                                strengths to divide and conquer the completion of this project. 
+                                What I learned about the data was that even tough the data may 
+                                appear clean it does not mean that it will do well in a Machine Learning model.
+                            </p>
+						</div>
+
+
+
+
+					</div>
+
+
                 </div>
 			</section>
 

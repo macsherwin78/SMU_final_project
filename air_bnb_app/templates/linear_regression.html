@@ -38,7 +38,11 @@
             <div class="inner">
                 <header class="align-center">
                     <h1>Linear Regressions</h1>
-                    <p>The figure below shows how we approach this project.</p>
+                    <p>Linear Regression is a predictive analysis method to explain the relationship between one dependent 
+                        variable and one independent variable. This model is defined by formula y = c + b*x, 
+                        where y = estimated dependent variable, c = constant, b = regression coefficient, 
+                        and x = independent variable.
+                    </p>
                 </header>
                 <div class="image fit">
                     <img src="../static/images/linear_regression.png" alt="overview flow chart" />
@@ -47,13 +51,10 @@
                 <h2 id="content">Linear Regressions</h2>
                 <h3>Single Factor</h3>
 
-                <p>In this project, we will analyze current and predict 
-                    future Airbnb prices by creating a machine learning model 
-                    on select categorical data.</br>
-                </br>We intend our resulting model to be used by both Airbnb hosts 
-                    and renters for price planning: potential hosts can validate 
-                    Airbnb’s official price model for accuracy, and potential renters 
-                    can plan travel according to best value by desired categorical attributes.
+                <p>We created three individual linear regression models to predict whether the number of days available during the year, minimum number of nights required for booking, or number of reviews (independent variables) indicate any linear relationship with price (dependent variable).
+
+                </br>Our individual linear regressions displayed incredibly low R2 values with no significant impact on price.
+                    
                 </p>
                 <!-- Table -->
 					<div class="table-wrapper">
@@ -95,6 +96,22 @@
 						</table>
 					</div>
 
+                    <div class="box alt">
+                        <div class="row 50% uniform">
+                            <div class="4u"><span class="image fit"><img src="../static/images/linear_reg_numReviews.png" alt="" /></span></div>
+                            <div class="4u"><span class="image fit"><img src="../static/images/linear_reg_MinNights.png" alt="" /></span></div>
+                            <div class="4u$"><span class="image fit"><img src="../static/images/linear_reg_longitude.png" alt="" /></span></div>
+
+                            <div class="4u"><span class="image fit"><img src="../static/images/linear_reg_PvAvailability.png" alt="" /></span></div>
+                            <div class="4u$"><span class="image fit"><img src="../static/images/linear_reg_calculated_host_listings_count.png" alt="" /></span></div>
+                        </div>
+                    </div>
+
+
+
+
+
+
 
                 <h2 id="content">Multi Linear Regression</h2>
 
@@ -103,22 +120,33 @@
                     on select categorical data.
                 </p>
 
+						<div class="table-wrapper">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>training_score</td>
+                                        <td>0.10633655484734617</td>
+                                    </tr>
+                                    <tr>
+                                        <td>testing_score</td>
+                                        <td>0.10243622238002437</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                <div class="table-wrapper">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>training_score</td>
-                                <td>0.10633655484734617</td>
-                            </tr>
-                            <tr>
-                                <td>testing_score</td>
-                                <td>0.10243622238002437</td>
-                            </tr>
-                        </tbody>
-                    </table>
+					<div class="image fit">
+						<img src="../static/images/Multi Line Residual Plot.png" alt="Multi Line Residual Plot" align="middle"/>
+					</div>
+                    
+                <h2>Strengths: </h2>
+                <h4>can determine strength of predictors, can predict future trends, can be regularized to avoid overfitting, can be easily updated with new data.</h4>
+            </br>
+                <h2>Weaknesses:  </h2>
+                <h4>poor performance in non-linear relationships, not naturally flexible to capture complex patterns</h4>
+
                 </div>
-
+                
             </div>
         </section>
 

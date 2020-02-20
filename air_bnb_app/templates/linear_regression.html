@@ -55,17 +55,69 @@
                     Airbnb’s official price model for accuracy, and potential renters 
                     can plan travel according to best value by desired categorical attributes.
                 </p>
+                <!-- Table -->
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th><h4>x-values</h4></th>
+									<th><h4>Linear Model</h4></th>
+									<th><h4>r-squared</h4></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>minimum_nights</td>
+									<td>price = 0.11131209 x + $126.19189905</td>
+									<td>0.001</td>
+								</tr>
+								<tr>
+									<td>availability_365</td>
+									<td>price = 0.03718934 x + $122.92764887</td>
+									<td>0.005</td>
+								</tr>
+								<tr>
+									<td>longitude</td>
+									<td>price = -433.18602994 x + $-31907.5721548</td>
+									<td>0.083</td>
+								</tr>
+								<tr>
+									<td>number_of_reviews</td>
+									<td>price = -0.06668308 x + $128.72204594</td>
+									<td>0.002</td>
+                                </tr>
+                                <tr>
+									<td>calculated_host_listing_count</td>
+									<td>price = 0.33784395 x + $124.53414117</td>
+									<td>0.026</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
 
                 <h2 id="content">Multi Linear Regression</h2>
 
                 <p>In this project, we will analyze current and predict 
                     future Airbnb prices by creating a machine learning model 
-                    on select categorical data.</br>
-                </br>We intend our resulting model to be used by both Airbnb hosts 
-                    and renters for price planning: potential hosts can validate 
-                    Airbnb’s official price model for accuracy, and potential renters 
-                    can plan travel according to best value by desired categorical attributes.
+                    on select categorical data.
                 </p>
+
+
+                <div class="table-wrapper">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>training_score</td>
+                                <td>0.10633655484734617</td>
+                            </tr>
+                            <tr>
+                                <td>testing_score</td>
+                                <td>0.10243622238002437</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
         </section>

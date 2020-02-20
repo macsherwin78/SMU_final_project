@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Map</title>
+		<title>Data</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../static/css/main.css" />
@@ -63,11 +63,80 @@
 						<img src="../static/images/jupyter_sc/abnb_full_describe.png" alt="full data describe" />
 					</div>
 
-					
+					<header class="align-center">
+						<h1>The Data Visualized using Tableau</h1>
+					</header>
 
+					<h3>Map of the Hosts' Locations</h3>
 
+					<!-- tableau Map -->
+				
+					<div class='tableauPlaceholder' id='viz1582158842922' style='position: relative'>
+						<noscript>
+							<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;un&#47;unfinishedAirbnb&#47;Map&#47;1_rss.png' style='border: none' /></a>
+						</noscript>
+						<object class='tableauViz'  style='display:none;'>
+							<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+							<param name='embed_code_version' value='3' />
+							<param name='site_root' value='' />
+							<param name='name' value='unfinishedAirbnb&#47;Map' />
+							<param name='tabs' value='no' />
+							<param name='toolbar' value='yes' />
+							<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;un&#47;unfinishedAirbnb&#47;Map&#47;1.png' />
+							<param name='animate_transition' value='yes' />
+							<param name='display_static_image' value='yes' />
+							<param name='display_spinner' value='yes' />
+							<param name='display_overlay' value='yes' />
+							<param name='display_count' value='yes' />
+						</object>
+					</div>
+				</br>
+				</br>
+					<h3>Ave. Price vs Number of Reviews by Room Type</h3>
 
+					<!-- tableau room type -->
+					<div class='tableauPlaceholder' id='viz1582159576576' style='position: relative'>
+						<noscript>
+							<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ab&#47;Abnb2&#47;PricebyNeighborhoodGroupandRoomType&#47;1_rss.png' style='border: none' /></a>
+						</noscript>
+						<object class='tableauViz'  style='display:none;'>
+							<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+							<param name='embed_code_version' value='3' />
+							<param name='site_root' value='' />
+							<param name='name' value='Abnb2&#47;PricebyNeighborhoodGroupandRoomType' />
+							<param name='tabs' value='no' />
+							<param name='toolbar' value='yes' />
+							<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ab&#47;Abnb2&#47;PricebyNeighborhoodGroupandRoomType&#47;1.png' />
+							<param name='animate_transition' value='yes' />
+							<param name='display_static_image' value='yes' />
+							<param name='display_spinner' value='yes' />
+							<param name='display_overlay' value='yes' />
+							<param name='display_count' value='yes' />
+						</object>
+					</div>
 
+				</br>
+				</br>
+				<h3>Ave. Price vs Number of Reviews by Room Type</h3>
+
+				<!-- tableau room type -->
+				<div class='tableauPlaceholder' id='viz1582160332535' style='position: relative'>
+					<noscript>
+						<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ab&#47;Abnb2&#47;Ave_PricevsNumberofReviewsbyRoomType&#47;1_rss.png' style='border: none' /></a>
+					</noscript>
+					<object class='tableauViz'  style='display:none;'>
+						<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+						<param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+						<param name='name' value='Abnb2&#47;Ave_PricevsNumberofReviewsbyRoomType' />
+						<param name='tabs' value='no' /><param name='toolbar' value='yes' />
+						<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ab&#47;Abnb2&#47;Ave_PricevsNumberofReviewsbyRoomType&#47;1.png' />
+						<param name='animate_transition' value='yes' />
+						<param name='display_static_image' value='yes' />
+						<param name='display_spinner' value='yes' />
+						<param name='display_overlay' value='yes' />
+						<param name='display_count' value='yes' />
+					</object>
+				</div>
 
 				</div>
 			</section>
@@ -94,15 +163,34 @@
 			<script src="static/js/util.js"></script>
 			<script src="static/js/main.js"></script>
 		
-		<!-- Tableau -->	
-			<script type='text/javascript'>
-				var divElement = document.getElementById('viz1581526117580');
-				var vizElement = divElement.getElementsByTagName('object')[0];
-				vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-				var scriptElement = document.createElement('script');
-				scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-				vizElement.parentNode.insertBefore(scriptElement, vizElement);
-			</script>
+		<!-- tableau -->
+		<script type='text/javascript'>
+			var divElement = document.getElementById('viz1582158842922');
+			var vizElement = divElement.getElementsByTagName('object')[0];
+			vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+			var scriptElement = document.createElement('script');
+			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+			vizElement.parentNode.insertBefore(scriptElement, vizElement);
+		</script>
+
+		<script type='text/javascript'>
+			var divElement = document.getElementById('viz1582159576576');
+			var vizElement = divElement.getElementsByTagName('object')[0];
+			vizElement.style.width='100%';
+			vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+			var scriptElement = document.createElement('script');
+			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+			vizElement.parentNode.insertBefore(scriptElement, vizElement);
+		</script>
+
+		<script type='text/javascript'>
+			var divElement = document.getElementById('viz1582160332535');
+			var vizElement = divElement.getElementsByTagName('object')[0];
+			vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+			var scriptElement = document.createElement('script');
+			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+			vizElement.parentNode.insertBefore(scriptElement, vizElement);
+		</script>
 
 	</body>
 </html>

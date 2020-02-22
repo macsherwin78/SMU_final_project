@@ -18,7 +18,7 @@
 				<nav class="left">
 					<a href="#menu"><span>Menu</span></a>
 				</nav>
-				<a href="{{url_for('index')}}" class="logo">Airbnb</a>
+				<a href="{{url_for('index')}}" class="logo">Analysis of Airbnb</a>
 			</header>
 
 		<!-- Menu -->
@@ -30,7 +30,9 @@
                 <li><a href="{{url_for('trees')}}">Trees</a></li>
                 <li><a href="{{url_for('knn')}}">KNN</a></li>
                 <li><a href="{{url_for('gradient_boost')}}">Gradient Boost</a></li>
-				</ul>
+                <li><br></li>
+				<li><h4><a href="{{url_for('calculator')}}">fAirbnb Calculator</a></h4></li>
+                </ul>
 			</nav>
 
 		<!-- Main -->
@@ -45,36 +47,34 @@
                         Our gradient boosting regression model resulted in a good R2 Score and MSE. This means we found a well-fitting model to predict the median price value for our price prediction model. 
                     </p>
                 </header>
-                <!-- <div class="image fit">
-                    <img src="../static/images/pic02.jpg" alt="overview flow chart" />
+                <div class="image fit">
+                    <img src="../static/images/gb.png" alt="gradient boost" />
                 </div>
 
-                <p>In this project, we will analyze current and predict 
-                    future Airbnb prices by creating a machine learning model 
-                    on select categorical data.</br>
-                </br>We intend our resulting model to be used by both Airbnb hosts 
-                    and renters for price planning: potential hosts can validate 
-                    Airbnb’s official price model for accuracy, and potential renters 
-                    can plan travel according to best value by desired categorical attributes.
-                </p> -->
-
+                <h3>Scores</h3>
+				<pre><code>
+                    R2 sq:  0.9710711269069624
+                    Mean squared error: 0.00
+                    Test Variance score: 0.97
+                </code></pre>
             </div>
         </section>
 
     <!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <h2>SMU</br>Data Science Bootcamp</h2>
-                <ul class="actions">
-                    <li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li>
-                    <li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
-                    <li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>
-                </ul>
-            </div>
-            <div class="copyright">
-                &copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
-            </div>
-        </footer>
+    <<footer id="footer">
+        <div class="inner">
+            <h2>SMU</br>Data Science Bootcamp</h2>
+            <ul class="actions">
+                <li><span class="icon fa-phone"></span> <a href="#">(214) 775-9982</a></li>
+                <li><span class="icon fa-envelope"></span> <a href="#">www.smu.edu/Pro</a></li>
+                <li><span class="icon fa-map-marker"></span> Dallas, TX 75205</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
+        </div>
+    </footer>
+
 
     <!-- Scripts -->
     <script src="static/js/jquery.min.js"></script>

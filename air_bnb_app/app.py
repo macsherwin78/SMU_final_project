@@ -11,6 +11,10 @@ def index():
 def overview():
     return render_template('overview.html')
 
+@app.route("/calculator")
+def calculator():
+    return render_template('calculator.html')
+
 @app.route("/data")
 def data():
     return render_template('data.html')

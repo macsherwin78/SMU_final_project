@@ -18,7 +18,7 @@
 				<nav class="left">
 					<a href="#menu"><span>Menu</span></a>
 				</nav>
-				<a href="{{url_for('index')}}" class="logo">Airbnb</a>
+				<a href="{{url_for('index')}}" class="logo">Analysis of Airbnb</a>
 			</header>
 
 		<!-- Menu -->
@@ -30,7 +30,9 @@
                 <li><a href="{{url_for('pre_processing')}}">Data Pre-Processing</a></li>
                 <li><a href="{{url_for('machine_learning')}}">Machine Learning</a></li>
                 <li><a href="{{url_for('collaborators')}}">Collaborators</a></li>
-                <li><a href="{{url_for('summary')}}">Summary</a></li>
+				<li><a href="{{url_for('summary')}}">Summary</a></li>
+				<li><br></li>
+				<li><h4><a href="{{url_for('calculator')}}">fAirbnb Calculator</a></h4></li>
 			</ul>
 
         </nav>
@@ -40,31 +42,74 @@
 				<div class="inner">
 					<header class="align-center">
 						<h1>Summary</h1>
-						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						<p>(Gradient Boosting is bae.)</p>
 					</header>
 					<div class="image fit">
-						<img src="../static/images/pic02.jpg" alt="" />
+						<img src="../static/images/overview.png" alt="" />
 					</div>
-					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-					<p> Aenean iaculis, neque sed pretium egestas, nunc lacus tempus enim, nec tincidunt urna massa a libero. Aenean mattis bibendum est, a pharetra elit. Morbi commodo lectus quis blandit mattis. Cras pharetra quam quis tincidunt tempus. Donec a sem magna. Nullam purus purus, fermentum id lorem sit amet, porta elementum neque. Proin vulputate metus ac faucibus luctus.</p>
-					<p>Ut congue purus sed elit consectetur tempus. Duis convallis, quam quis pellentesque vestibulum, tellus arcu hendrerit ante, sed dictum felis nisl vitae magna. Integer et sapien a erat molestie tempor. Cras est odio, suscipit id porttitor id, mollis et ligula. Curabitur molestie mi molestie accumsan faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer porta malesuada pellentesque. Morbi imperdiet dictum velit, eu volutpat sem posuere non. Fusce ullamcorper gravida velit, sed sollicitudin libero iaculis id. Ut eu neque non odio fringilla faucibus nec quis neque. Quisque et nisi fermentum, tincidunt libero a, condimentum ligula. Quisque ultrices blandit lacinia. Nulla velit lorem, placerat nec eros ut, fermentum pharetra dolor. Maecenas arcu ipsum, mattis et suscipit sed, convallis nec lectus. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
+					
+					<p>
+						This project explored a sample Airbnb dataset with the goal of developing
+						a price prediction model that is comparable to what the company is using.
+					</p>
+					<p>
+						Data on comma separated values were pre-processed to make it suitable for deeper analyses 
+						including processing it through different machine learning models.
+					</p>
+					<p>
+						Multiple technologies and tools were used  in order to accomplish the goal. 
+						Including but limited to python, jupyter lab/notebook, flask, scikit learn, HTML and CSS.
+					</p>
+					<p>
+						After preparing the data, it was subjected to multiple machine learning regression 
+						models against pre-determined affecting categories. 
+						The resulting models' scores were then compared among each other to determine which is 
+						the best-fitting.
+					</p>
+					<p>
+						Once the best-fitting model was identified a front-end GUI was created with the 
+						chosen model at the backend to calculate the price based on the user's input.
+					</p>
+					<p>
+
+				<h2 id="content">Future Work</h2>
+
+				<p>There are multiple avenues to expand this project:</p>
+				<div class="6u 12u$(small)">
+					<ul>
+						<li>Expand the sample dataset to cover a wider time range</li>
+						<li>Add a "host" and "renter" mode on the calculator</li>
+						<li>Add multiple regression models option on the calculator</li>
+						<li>Add different cities on the calculator</li>
+					</ul>
+				</div>
+
+				<p>
+					The intention is that the resulting app can be used by both Airbnb hosts and 
+					renters for price planning: potential hosts can validate Airbnb’s official 
+					price model for accuracy, and potential renters can plan travel according 
+					to best value by desired categorical attributes. 
+                    
+                </p>
+
 				</div>
 			</section>
 
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<h2>SMU</br>Data Science Bootcamp</h2>
-					<ul class="actions">
-						<li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li>
-						<li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
-						<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
-				</div>
-			</footer>
+		<footer id="footer">
+			<div class="inner">
+				<h2>SMU</br>Data Science Bootcamp</h2>
+				<ul class="actions">
+					<li><span class="icon fa-phone"></span> <a href="#">(214) 775-9982</a></li>
+					<li><span class="icon fa-envelope"></span> <a href="#">www.smu.edu/Pro</a></li>
+					<li><span class="icon fa-map-marker"></span> Dallas, TX 75205</li>
+				</ul>
+			</div>
+			<div class="copyright">
+				&copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
+			</div>
+		</footer>
+
 
 		<!-- Scripts -->
 		<script src="static/js/jquery.min.js"></script>

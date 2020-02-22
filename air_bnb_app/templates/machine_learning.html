@@ -18,7 +18,7 @@
 				<nav class="left">
 					<a href="#menu"><span>Menu</span></a>
 				</nav>
-				<a href="{{url_for('index')}}" class="logo">Airbnb</a>
+				<a href="{{url_for('index')}}" class="logo">Analysis of Airbnb</a>
 			</header>
 
 		<!-- Menu -->
@@ -31,6 +31,8 @@
 					<li><a href="{{url_for('machine_learning')}}">Machine Learning</a></li>
 					<li><a href="{{url_for('collaborators')}}">Collaborators</a></li>
 					<li><a href="{{url_for('summary')}}">Summary</a></li>
+					<li><br></li>
+					<li><h4><a href="{{url_for('calculator')}}">fAirbnb Calculator</a></h4></li>
 				</ul>
 			</nav>
 
@@ -67,7 +69,15 @@
 								<li><a href="{{url_for('trees')}}" class="button fit">Trees</a></li>
 							</ul>
 
-							<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan ac praesent.</p>
+							<p>Decision Trees are a non-parametric supervised machine learning model used for 
+								classification and regression. This model learns in a hierarchical fashion by 
+								repeatedly splitting the chosen dataset into separate branches to learn non-linear 
+								relationships.  </br>
+								Random Forest is a supervised machine learning model that averages the result of any 
+								chosen number of Decision Trees using randomly selected observations and selected 
+								column features. The result is a final average of all values predicted by all present 
+								trees in the Random Forest.
+							</p>
 						</div>
 
 						<div class="6u 12u$(small)">
@@ -75,7 +85,13 @@
 								<li><a href="{{url_for('knn')}}" class="button fit">K-Nearest Neighbor</a></li>
 							</ul>
 
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<p>A KNN regression calculates the average of the numerical target of the 
+								K nearest neighbors. The algorithm selects the best K value for the 
+								given data by running itself several times with different values of K. 
+								The model chooses the K that reduces the number of errors encountered 
+								while maintaining the ability to accurately make predictions when provided 
+								with new data.
+							</p>
 						</div>
 
 						<div class="6u$ 12u$(small)">
@@ -83,7 +99,12 @@
 								<li><a href="{{url_for('gradient_boost')}}" class="button fit">Gradient Boost</a></li>
 							</ul>
 
-							<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan ac praesent.</p>
+							<p>Gradient boosting involves three elements: 
+								a loss function to be optimized, a weak learner to make predictions, 
+								and an additive model to integrate weak learners to minimize the loss 
+								function. One new weak learner is added at a time, and existing weak learners 
+								 frozen and left unchanged.
+							</p>
 						</div>
 
 					</div>	
@@ -93,19 +114,20 @@
 			</section>
 
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<h2>Get In Touch</h2>
-					<ul class="actions">
-						<li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li>
-						<li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
-						<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
-				</div>
-			</footer>
+		<footer id="footer">
+			<div class="inner">
+				<h2>SMU</br>Data Science Bootcamp</h2>
+				<ul class="actions">
+					<li><span class="icon fa-phone"></span> <a href="#">(214) 775-9982</a></li>
+					<li><span class="icon fa-envelope"></span> <a href="#">www.smu.edu/Pro</a></li>
+					<li><span class="icon fa-map-marker"></span> Dallas, TX 75205</li>
+				</ul>
+			</div>
+			<div class="copyright">
+				&copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
+			</div>
+		</footer>
+
 
 		<!-- Scripts -->
 		<script src="static/js/jquery.min.js"></script>
